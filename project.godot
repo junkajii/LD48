@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "Collectable",
 "language": "GDScript",
 "path": "res://src/collectables/Collectable.gd"
+}, {
+"base": "Area2D",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://Enemy.gd"
 } ]
 _global_script_class_icons={
-"Collectable": ""
+"Collectable": "",
+"Enemy": ""
 }
 
 [application]
