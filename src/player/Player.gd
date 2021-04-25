@@ -19,8 +19,8 @@ func _ready():
 func _process(_delta):
 	position.x = clamp(position.x, 570, 1400)
 	position.y = clamp(position.y, 50, 1030)
-	if Input.is_action_just_pressed("ui_end"):
-		main.statusbar.damage()
+#	if Input.is_action_just_pressed("ui_end"):
+#		main.statusbar.damage()
 
 func _physics_process(delta):
 	input.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
@@ -39,6 +39,7 @@ func _on_Area2D_area_entered(area):
 	if area is Enemy:
 		area.visible = false
 		main.statusbar.damage()
+		area.play_sfx()
 	if area is Collectable:
 		area.play_sfx()
 		area.visible = false

@@ -4,6 +4,10 @@ onready var btn_music = $Control/ButtonMusic
 onready var btn_sfx = $Control/ButtonSFX
 onready var btn_pressstart = $Control/PressStart
 
+func _process(_delta):
+	if Input.is_action_just_pressed("ui_accept"):
+		get_tree().change_scene("res://Main.tscn")
+
 func _on_ButtonSFX_toggled(button_pressed):
 	var audio_player = $Control/ButtonSFX/AudioStreamPlayer
 	audio_player.play()

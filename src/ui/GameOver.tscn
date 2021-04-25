@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/ui/GameOver.gd" type="Script" id=1]
+[ext_resource path="res://font-56.tres" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 56
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 56
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 96
+font_data = ExtResource( 2 )
+
+[node name="GameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 244.071
+margin_bottom = 333.071
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.2, 0.2, 0.2, 1 )
+text = "Press Enter to back to menu"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="High Score" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -250.29
+margin_bottom = -161.29
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.2, 0.2, 0.2, 1 )
+text = "High Score"
+align = 1
+
+[node name="ThankYou" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -363.555
+margin_bottom = -274.555
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.2, 0.2, 0.2, 1 )
+text = "Thank You for Playing"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -153.705
+margin_bottom = -1.7052
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.2, 0.2, 0.2, 1 )
+text = "0000000"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

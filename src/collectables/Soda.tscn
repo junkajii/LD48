@@ -4,7 +4,9 @@
 [ext_resource path="res://src/collectables/Collectable.gd" type="Script" id=2]
 [ext_resource path="res://assets/audio/sfx-food.wav" type="AudioStream" id=3]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 31.5
+height = 31.0
 
 [node name="Soda" type="Area2D"]
 script = ExtResource( 2 )

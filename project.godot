@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="LD48"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://src/ui/Menu.tscn"
 boot_splash/image="res://LD48-logo.png"
 boot_splash/fullsize=false
 boot_splash/bg_color=Color( 0.133333, 0.133333, 0.133333, 1 )
@@ -36,6 +36,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Background="res://src/ui/Background.tscn"
+SaveAndLoad="*res://SaveAndLoad.gd"
 
 [display]
 

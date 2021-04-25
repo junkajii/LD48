@@ -5,6 +5,7 @@
 [ext_resource path="res://assets/audio/sfx-coin.wav" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 45.9959
 
 [node name="Coin" type="Area2D"]
 script = ExtResource( 2 )

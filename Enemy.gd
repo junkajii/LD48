@@ -1,7 +1,7 @@
 class_name Enemy
 extends Area2D
 
-const SPEED = 1000
+const SPEED = 0
 onready var audio_player = $AudioStreamPlayer2D
 
 func _process(delta):
