@@ -1,4 +1,6 @@
 extends ParallaxBackground
 
+const SPEED = 2000
+
 func _process(delta):
-	scroll_offset.y -= 1000 * delta
+	scroll_offset.y -= SPEED * delta

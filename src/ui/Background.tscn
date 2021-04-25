@@ -1,7 +1,7 @@
 [gd_scene format=2]
 
 [node name="Background" type="CanvasLayer"]
-layer = -1
+layer = -128
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0

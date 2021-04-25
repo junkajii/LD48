@@ -7,6 +7,7 @@ const FRICTION = 1000
 var velocity: Vector2 = Vector2.ZERO
 var input: Vector2 = Vector2.ZERO
 
+onready var main = get_parent()
 onready var anim = $AnimationPlayer
 var rng = RandomNumberGenerator.new()
 var last_num
@@ -30,7 +31,9 @@ func _physics_process(delta):
 
 func _on_Area2D_area_entered(area):
 	if area is Collectable:
-		area.queue_free()
+		area.play_sfx()
+		area.visible = false
+		main.statusbar.up_score()
 	var num = rng.randi_range(0, 2)
 	while(num == last_num):
 		num = rng.randi_range(0, 2)
