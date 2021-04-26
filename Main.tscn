@@ -15,7 +15,6 @@ script = ExtResource( 3 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
 volume_db = -16.0
-autoplay = true
 
 [node name="StatusBar" parent="." instance=ExtResource( 10 )]
 
