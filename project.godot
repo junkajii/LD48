@@ -17,7 +17,7 @@ _global_script_classes=[ {
 "base": "Area2D",
 "class": "Enemy",
 "language": "GDScript",
-"path": "res://Enemy.gd"
+"path": "res://src/Enemys/Enemy.gd"
 } ]
 _global_script_class_icons={
 "Collectable": "",
